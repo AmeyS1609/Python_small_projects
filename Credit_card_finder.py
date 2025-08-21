@@ -18,7 +18,6 @@ def main():
     card_number=input("Enter credid card number with all spaces and hyphens:")
     for char in card_number:
         if char.isalpha():
-            print("INVALID!,Must contain only Numbers,space and hyphen")
             return True
         
     card_tranlation=str.maketrans({'-':'',' ':''})#its just a translation map not translated number
@@ -51,7 +50,7 @@ while True:
     if n==1:
         y=main()
         if y:
-            break
+            print("INVALID!,Must contain only Numbers,space and hyphen")
     elif n==2:
         break
     else:
