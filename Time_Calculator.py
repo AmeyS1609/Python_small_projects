@@ -15,7 +15,6 @@ def add_time(start, duration,day=None):
         minutes-=60
         hours+=1
     total_hours=hours
-    periods=total_hours//12
     if total_hours % 24 < 12:
         zone = "AM"
     else:
