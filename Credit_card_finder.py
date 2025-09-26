@@ -15,7 +15,7 @@ def credit_card_validator(card_number):
     total=sum_even_digits+sum_odd_digits
     return total%10==0
 def main():
-    card_number=input("Enter credid card number with all spaces and hyphens:")
+    card_number=input("Enter credit card number with all spaces and hyphens:")
     for char in card_number:
         if char.isalpha():
             return True
@@ -26,7 +26,7 @@ def main():
         print("VALID!")
         if trans_card_number[0]=='4':
             print("The card is a valid VISA card")
-        elif trans_card_number[0:5]=='51–55':
+        elif trans_card_number[0:4]=='5155' or trans_card_number[0:4]=='5105':
             print("The card is a valid MASTERCARD")
         elif trans_card_number[0:2]=='34' or trans_card_number[0:2]=='37':
             print("The card is a valid AMERICAN EXPRESS card")
