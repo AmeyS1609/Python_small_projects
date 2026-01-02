@@ -24,16 +24,10 @@ def login():
     while True:
         username = input("USERNAME: ")
         password = input("PASSWORD: ")
-
-        cur.execute(
-            "SELECT 1 FROM signup WHERE username=%s AND password=%s",
-            (username, password)
-        )
+        cur.execute("SELECT 1 FROM signup WHERE username=%s AND password=%s",(username, password))
         result = cur.fetchone()
-
         if result is not None:
             break  
-
         print("Wrong username or password")
         choice = input("Enter 1 to retry else any other key to go back: ")
         if choice != "1":
