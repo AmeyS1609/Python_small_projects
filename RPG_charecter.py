@@ -1,5 +1,5 @@
-full_dot = '●'
-empty_dot = '○'
+full_dot = "●"
+empty_dot = "○"
 def create_character(name,strength,intel,charisma):
     if not isinstance(name,str):
         return "The character name should be a string"
