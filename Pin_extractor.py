@@ -1,3 +1,4 @@
+#The nth digit of the pin is hidden as the length of the nth word in the nth line.
 def pin_extractor(poems):
     secret_codes = []
     for poem in poems:
